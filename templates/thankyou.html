@@ -1,0 +1,16 @@
+<<!-- h1> thankyou .here is the info you gave us:</h1>
+<ul>
+	<li> breed:{{ session['breed']}}</li>
+	<li> neutered:{{ session['neutered']}}</li>
+	<li>mood:{{session['mood'] }}</li>
+	<li>food:{{ session['food']}}</li>
+	<li> feedback:{{ session['feedback']}}</li>
+
+</ul> -->
+<p> 
+	{% if breed %}
+	the breed you entered is {{ session['breed'] }}
+
+	{% endif%}
+
+

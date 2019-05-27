@@ -1,0 +1,49 @@
+<!-- <p>
+	{% if breed %}
+	The breed you entered is {{ breed }}
+	update it in the form below:
+
+	{% else%}
+	please enter your breed:
+
+
+
+	{% endif %}
+</p>
+<form method='POST'>
+	{{ form.hidden_tag()}}
+	{{ form.breed.label}}{{form.breed()}}
+	{{ form.submit()}}
+</form> -->
+
+<!-- <h1> Welcome to puppy survey </h1>
+<form method="post">
+	{{form.hidden_tag()}}
+	{{ form.breed.label}}{{ form.breed()}}
+	<br>
+	{{ form.neutered.label}}{{form.neutered()}}
+	<br>
+	{{ form.food_choice.label}}{{ form.food_choice()}}
+	<br>
+	{{ form.mood.label}}{{form.mood()}}
+	<br>
+	any other feedback?
+	<br> 
+	{{ form.feedback}}
+	<br>
+	{{form.submit()}}
+
+</form> -->
+
+<p>
+	{% for mess in get_flashed_messages()%}
+	hhhhhhhhhhhh
+	{% endfor %} 
+</p>
+<form method="POST">
+
+	{{ form.hidden_tag()}}
+	{{form.breed.label}}{{form.breed()}}
+	{{ form.submit()}}
+
+</form>
